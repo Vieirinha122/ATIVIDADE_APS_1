@@ -39,3 +39,27 @@ p {
     color: #555;
 }
 
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
+
+/* Estilos para dispositivos tablets e maiores */
+@media (min-width: 601px) and (max-width: 992px) {
+    button {
+        width: 100%;
+    }
+}
