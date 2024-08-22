@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta name="description" content="Requisitando uma API de conselhos">
+    <meta name="description" content="Requisitando preços de carros">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
@@ -9,8 +9,19 @@
 </head>
 <body>
     <h1>Consulta de Preço de Veículo!</h1>
-    <div id="fetchDataButton">Obter Informações do Veículo</div>
-    <button id="result">Clique aqui</button>
+    
+    <label for="marca">Marca:</label>
+    <select id="marca"></select>
+    
+    <label for="modelo">Modelo:</label>
+    <select id="modelo"></select>
+    
+    <label for="Ano">Ano:</label>
+    <select id="ano"></select>
+    
+    <button id="fetchDataButton">Obter Informações do Veículo</button>
+    
+    <div id="result"></div>
 
     <script src="./js/solucao.js"></script>
 </body>
