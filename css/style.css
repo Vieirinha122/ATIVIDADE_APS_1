@@ -1,16 +1,38 @@
 /* ESTILOS GERAIS */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto';
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #D9D9D9;
 }
 
-h1 {
-    margin-top: 50px;
-    font-size: 2em;
-    color: #333;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-style: italic;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.menu-icon {
+    font-style: normal;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #212426;
+    margin: 10px;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 10px;
 }
 
 #result {
@@ -27,40 +49,27 @@ h1 {
     width: 600px;
 }
 
-button {
-    padding: 12px 10px;
-    margin-left: 10px;
-    font-size: 1em;
+#fetchDataButton {
+    font-size: 1.2rem;
     cursor: pointer;
     border: none;
     border-radius: 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #7B674A;
+    font-weight: bold;
+    color: white;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #0056b3;
     transform: scale(1.05);
 }
 
-h2 {
-    color: #444;
-    margin-bottom: 10px;
-}
-
-p {
-    margin: 8px 0;
-    color: #666;
-}
-
 select {
-    font-size: 1em;
+    font-weight: bold;
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 6px;
     background-color: #fff;
-    color: #333;
+    color: #212426;
     appearance: none; 
     width: 100%;
     max-width: 200px;
@@ -79,7 +88,7 @@ option {
     text-align: center;
     padding: 10px;
     background-color: #fff;
-    color: #333;
+    color: #212426;
 }
 
 .select-container {
@@ -88,7 +97,9 @@ option {
 }
 
 label {
-    margin: 10px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
 }
 
 /* RESPONSIVIDADE GERAL */
@@ -134,7 +145,7 @@ label {
 
 @media (max-width: 480px) {
     select {
-        font-size: 0.9em;
+        font-size: 1.2rem;
         padding: 8px;
     }
 }

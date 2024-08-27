@@ -8,20 +8,28 @@
     <title>Tabela FIPE</title>
 </head>
 <body>
-    <h1>Consulta de Preço de Veículo!</h1>
+    <header class="header">
+        <h1>Tabela FIPE</h1>
+        <div class="menu-icon">
+            &#9776;
+        </div>
+    </header>
     
-    <label for="marca">Marca:</label>
-    <select id="marca"></select>
-    
-    <label for="modelo">Modelo:</label>
-    <select id="modelo"></select>
-    
-    <label for="Ano">Ano:</label>
-    <select id="ano"></select>
-    
-    <button id="fetchDataButton">Obter Informações do Veículo</button>
+    <div class="container">
+        <label for="marca">Marca</label>
+        <select id="marca"></select>
+        
+        <label for="modelo">Modelo</label>
+        <select id="modelo"></select>
+        
+        <label for="Ano">Ano</label>
+        <select id="ano"></select>
+        <button id="fetchDataButton">Obter Informações do Veículo</button>
+    </div>
+        
     
     <div id="result"></div>
+    
 
     <script src="./js/solucao.js"></script>
 </body>
