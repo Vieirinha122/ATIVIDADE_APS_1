@@ -89,3 +89,19 @@ document.getElementById('modelo').addEventListener('change', (e) => {
 
 document.getElementById('fetchDataButton').addEventListener('click', VeiculoInformacao);
 buscarMarcas();
+
+// js/app.js
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker
+        .register('/service-worker.js') // Certifique-se de que o caminho está correto
+        .then((registration) => {
+          console.log('Service Worker registrado com sucesso:', registration);
+        })
+        .catch((error) => {
+          console.log('Falha ao registrar o Service Worker:', error);
+        });
+    });
+  }
+  

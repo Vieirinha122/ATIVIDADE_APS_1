@@ -2,8 +2,8 @@ self.addEventListener('install', (e) => {
     e.waitUntil(
         caches.open('Tabela-fipe').then((cache) => cache.addAll([
             '/index.html',
-            '/css/styles.css',
-            '/js/app.js',
+            '/css/style.css',
+            '/js/solucao.js',
             '/manifest.json'
         ]))
     );
